@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Eirynne.Posts.Post>
+
+<ul>
+    @foreach(var post in Model)
+    {
+        <li>
+            <h2>@post.Title</h2>
+            <p>@post.Copy</p>
+        </li>
+    }
+</ul>
