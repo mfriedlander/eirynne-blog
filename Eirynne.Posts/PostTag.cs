@@ -4,8 +4,8 @@ namespace Eirynne.Posts
 {
     public class PostTag
     {
-        public object Key { get; set; }
+        public object ID { get; set; }
 
-        public string Title { get; set; }
+        public string tag { get; set; }
     }
 }

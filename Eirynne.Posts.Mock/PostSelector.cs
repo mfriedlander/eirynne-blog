@@ -12,9 +12,9 @@ namespace Eirynne.Posts.Mock
         public PostSelector()
         {
             _tags = new List<PostTag>(3);
-            _tags.Add(new PostTag() { Key = "dogs", Title = "Dogs" });
-            _tags.Add(new PostTag() { Key = "cosmetics", Title = "Cosmetics" });
-            _tags.Add(new PostTag() { Key = "games", Title = "Games" });
+            _tags.Add(new PostTag() { ID = "dogs", tag = "Dogs" });
+            _tags.Add(new PostTag() { ID = "cosmetics", tag = "Cosmetics" });
+            _tags.Add(new PostTag() { ID = "games", tag = "Games" });
 
             _posts = new List<Post>(3);
             _posts.Add(GetPost(1, _tags[0]));
@@ -34,17 +34,17 @@ namespace Eirynne.Posts.Mock
 
         public Post Select(object key)
         {
-            return _posts.First(p => p.Key.ToString() == key.ToString());
+            return _posts.First(p => p.ID.ToString() == key.ToString());
         }
 
         private Post GetPost(int index, params PostTag[] tags)
         {
             return new Post()
             {
-                Key = index.ToString(),
-                Title = "Title " + index,
-                Copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat tempus lectus vitae auctor. Nulla sit amet pretium diam. Integer tempor consectetur efficitur. Donec porta ex eget enim tincidunt eleifend.",
-                Date = new DateTime(2016, 1, index),
+                ID = index.ToString(),
+                title = "Title " + index,
+                postCopy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat tempus lectus vitae auctor. Nulla sit amet pretium diam. Integer tempor consectetur efficitur. Donec porta ex eget enim tincidunt eleifend.",
+                postDate = new DateTime(2016, 1, index),
                 Tags = tags
             };
         }

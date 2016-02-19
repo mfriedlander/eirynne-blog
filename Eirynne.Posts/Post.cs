@@ -8,13 +8,15 @@ namespace Eirynne.Posts
 {
     public class Post
     {
-        public object Key { get; set; }
+        public object ID { get; set; }
 
-        public string Title { get; set; }
+        public string title { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime postDate { get; set; }
 
-        public string Copy { get; set; }
+        public string postCopy { get; set; }
+
+        public string promoImage { get; set; }
 
         public IEnumerable<PostTag> Tags { get; set; }
     }
