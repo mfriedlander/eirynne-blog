@@ -183,6 +183,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Eirynne.Posts.Cecil\Eirynne.Posts.Cecil.csproj">
+      <Project>{657527ab-4870-46f3-8bb1-26d00d05dd38}</Project>
+      <Name>Eirynne.Posts.Cecil</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Eirynne.Posts.Mock\Eirynne.Posts.Mock.csproj">
       <Project>{e4bd93f4-8983-4897-87e3-594f384baf09}</Project>
       <Name>Eirynne.Posts.Mock</Name>

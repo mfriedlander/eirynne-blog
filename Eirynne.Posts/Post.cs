@@ -10,13 +10,13 @@ namespace Eirynne.Posts
     {
         public object ID { get; set; }
 
-        public string title { get; set; }
+        public string Title { get; set; }
 
-        public DateTime postDate { get; set; }
+        public DateTime Date { get; set; }
 
-        public string postCopy { get; set; }
+        public string Copy { get; set; }
 
-        public string promoImage { get; set; }
+        public string PromoImage { get; set; }
 
         public IEnumerable<PostTag> Tags { get; set; }
     }

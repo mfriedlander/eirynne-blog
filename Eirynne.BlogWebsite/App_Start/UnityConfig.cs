@@ -2,7 +2,8 @@ using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using Eirynne.Posts;
-using Eirynne.Posts.Mock;
+//using Eirynne.Posts.Mock;
+using Eirynne.Posts.Cecil;
 
 namespace Eirynne.BlogWebsite.App_Start
 {
